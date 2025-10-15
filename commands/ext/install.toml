@@ -1,0 +1,16 @@
+# Invoked via: /ext:install https://github.com/ChromeDevTools/chrome-devtools-mcp
+description = "Easily install Gemini CLI extensions"
+prompt = """
+Install the following Gemini CLI extension: `{{args}}`.
+
+Installation result:
+!{gemini extensions install {{args}}}
+
+If the installation was successful, respond with:
+
+"Installation successful! Please restart Gemini CLI for the action to take effect."
+
+If the installation failed, pass on the error message unchanged.
+
+Note: if the provided extension does not look like a GitHub URL (`https://github.com/<user>/<repo>`), then that is likely the reason for the error.
+"""

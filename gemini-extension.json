@@ -1,0 +1,11 @@
+{
+  "name": "extension-browser",
+  "version": "1.0.0",
+  "mcpServers": {
+    "nodeServer": {
+      "command": "node",
+      "args": ["${extensionPath}${/}dist${/}server.js"],
+      "cwd": "${extensionPath}"
+    }
+  }
+}
